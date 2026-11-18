@@ -12,6 +12,7 @@
 
 <body>
 
+<!-- Navigation -->
 <nav class="navbar md:navbar-expand bg-1">
     <div class="container-fluid">
         <a class="navbar-brand fw-bold" href="index.html">
@@ -65,6 +66,7 @@
         Sweet moments, fresh strawberries, and beautiful desserts.
     </p>
 
+    <!-- Carousel -->
     <div id="heroCarousel" class="carousel carousel-overlay">
         <div class="carousel-inner rounded-5">
 
@@ -109,11 +111,13 @@
         </div>
     </div>
 
+    <!-- Dessert Gallery -->
     <section id="desserts" class="mt-5">
         <h2 class="text-center my-5">Our Dessert Collection</h2>
 
         <div class="row g-4">
 
+            <!-- Card 1 -->
             <div class="col-12 md:col-6 lg:col-4">
                 <div class="card h-100">
                     <img src="images/berries cake.jpg"
@@ -142,6 +146,7 @@
                 </div>
             </div>
 
+            <!-- Card 2 -->
             <div class="col-12 md:col-6 lg:col-4">
                 <div class="card h-100">
                     <img src="images/strawberry puff.jpg"
@@ -169,6 +174,7 @@
                 </div>
             </div>
 
+            <!-- Card 3 -->
             <div class="col-12 md:col-6 lg:col-4">
                 <div class="card h-100">
                     <img src="images/strawberry chocolate cake roll.jpg"
@@ -195,7 +201,198 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Card 4 -->
+            <div class="col-12 md:col-6 lg:col-4">
+                <div class="card h-100">
+                    <img src="images/strawberry short cake.jpg"
+                         class="w-100"
+                         alt="Slice of strawberry shortcake with cream">
+                    <div class="card-body">
+                        <h3 class="card-title">Strawberry Shortcake</h3>
+                        <p>Fluffy sponge cake with fresh strawberries.</p>
+                        <details class="accordion-item">
+                            <summary class="accordion-header">
+                                Details
+                            </summary>
+                            <div class="accordion-body">
+                                Layers of vanilla sponge, whipped cream,
+                                and fresh strawberry slices.
+                            </div>
+                        </details>
+                        <button class="btn-solid theme-primary mt-4"
+                                type="button"
+                                data-bs-toggle="dialog"
+                                data-bs-target="#dessertDialog4">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-12 md:col-6 lg:col-4">
+                <div class="card h-100">
+                    <img src="images/strawberry pudding chocolate cake.jpg"
+                         class="w-100"
+                         alt="Layered strawberry and chocolate cake">
+                    <div class="card-body">
+                        <h3 class="card-title">Strawberry Chocolate Cake</h3>
+                        <p>A layered dessert with chocolate and berries.</p>
+                        <details class="accordion-item">
+                            <summary class="accordion-header">
+                                Details
+                            </summary>
+                            <div class="accordion-body">
+                                A sweet combination of chocolate,
+                                strawberry filling, and soft cake layers.
+                            </div>
+                        </details>
+                        <button class="btn-solid theme-primary mt-4"
+                                type="button"
+                                data-bs-toggle="dialog"
+                                data-bs-target="#dessertDialog5">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-12 md:col-6 lg:col-4">
+                <div class="card h-100">
+                    <img src="images/strawberry pudding.jpg"
+                         class="w-100"
+                         alt="Strawberry pudding served on a wooden tray">
+                    <div class="card-body">
+                        <h3 class="card-title">Strawberry Pudding</h3>
+                        <p>A creamy dessert with fresh strawberry toppings.</p>
+                        <details class="accordion-item">
+                            <summary class="accordion-header">
+                                Details
+                            </summary>
+                            <div class="accordion-body">
+                                Smooth pudding decorated with strawberries
+                                and served as a light sweet treat.
+                            </div>
+                        </details>
+                        <button class="btn-solid theme-primary mt-4"
+                                type="button"
+                                data-bs-toggle="dialog"
+                                data-bs-target="#dessertDialog6">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
         </div>
+    </section>
+</main>
+
+<!-- Six Dessert Dialogs -->
+
+<dialog class="dialog" id="dessertDialog1"
+        aria-labelledby="dialogTitle1">
+    <div class="dialog-header">
+        <h2 id="dialogTitle1">Mixed Berry Tart</h2>
+        <button class="btn-close" type="button"
+                data-bs-dismiss="dialog"
+                aria-label="Close"></button>
+    </div>
+    <div class="dialog-body">
+        Discover our colorful berry tart, a fresh and fruity treat.
+    </div>
+    <div class="dialog-footer">
+        <button class="btn-solid theme-primary"
+                data-bs-dismiss="dialog">Close</button>
+    </div>
+</dialog>
+
+<dialog class="dialog" id="dessertDialog2"
+        aria-labelledby="dialogTitle2">
+    <div class="dialog-header">
+        <h2 id="dialogTitle2">Strawberry Cream Puff</h2>
+        <button class="btn-close" type="button"
+                data-bs-dismiss="dialog"
+                aria-label="Close"></button>
+    </div>
+    <div class="dialog-body">
+        Enjoy a light pastry with a creamy strawberry filling.
+    </div>
+    <div class="dialog-footer">
+        <button class="btn-solid theme-primary"
+                data-bs-dismiss="dialog">Close</button>
+    </div>
+</dialog>
+
+<dialog class="dialog" id="dessertDialog3"
+        aria-labelledby="dialogTitle3">
+    <div class="dialog-header">
+        <h2 id="dialogTitle3">Chocolate Strawberry Roll</h2>
+        <button class="btn-close" type="button"
+                data-bs-dismiss="dialog"
+                aria-label="Close"></button>
+    </div>
+    <div class="dialog-body">
+        A soft chocolate roll with a sweet strawberry center.
+    </div>
+    <div class="dialog-footer">
+        <button class="btn-solid theme-primary"
+                data-bs-dismiss="dialog">Close</button>
+    </div>
+</dialog>
+
+<dialog class="dialog" id="dessertDialog4"
+        aria-labelledby="dialogTitle4">
+    <div class="dialog-header">
+        <h2 id="dialogTitle4">Strawberry Shortcake</h2>
+        <button class="btn-close" type="button"
+                data-bs-dismiss="dialog"
+                aria-label="Close"></button>
+    </div>
+    <div class="dialog-body">
+        Classic strawberry shortcake with soft sponge and cream.
+    </div>
+    <div class="dialog-footer">
+        <button class="btn-solid theme-primary"
+                data-bs-dismiss="dialog">Close</button>
+    </div>
+</dialog>
+
+<dialog class="dialog" id="dessertDialog5"
+        aria-labelledby="dialogTitle5">
+    <div class="dialog-header">
+        <h2 id="dialogTitle5">Strawberry Chocolate Cake</h2>
+        <button class="btn-close" type="button"
+                data-bs-dismiss="dialog"
+                aria-label="Close"></button>
+    </div>
+    <div class="dialog-body">
+        A rich layered cake combining chocolate and strawberries.
+    </div>
+    <div class="dialog-footer">
+        <button class="btn-solid theme-primary"
+                data-bs-dismiss="dialog">Close</button>
+    </div>
+</dialog>
+
+<dialog class="dialog" id="dessertDialog6"
+        aria-labelledby="dialogTitle6">
+    <div class="dialog-header">
+        <h2 id="dialogTitle6">Strawberry Pudding</h2>
+        <button class="btn-close" type="button"
+                data-bs-dismiss="dialog"
+                aria-label="Close"></button>
+    </div>
+    <div class="dialog-body">
+        A smooth and creamy pudding with fresh strawberries.
+    </div>
+    <div class="dialog-footer">
+        <button class="btn-solid theme-primary"
+                data-bs-dismiss="dialog">Close</button>
+    </div>
+</dialog>
 
 <footer class="container text-center my-5">
     <p>© 2026 Strawberry Cafe Collection.</p>
